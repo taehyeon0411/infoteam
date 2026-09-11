@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 68px;
+
+  padding: 7px 10px;
+  transform: translateX(-50%);
+
+  background: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+
+  min-width: 60px;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+  color: #6b7280;
+
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.nav-item.active,
+.nav-item.add {
+  color: #2563eb;
+}
+
+.nav-item.active span,
+.nav-item.add span {
+  font-weight: 700;
+}

@@ -1,0 +1,298 @@
+/* ===========================
+   내 정보 페이지 전용 스타일
+=========================== */
+
+.myinfo-main {
+  min-height: calc(100vh - 180px);
+  padding: 42px 20px 120px;
+  background: #ffffff;
+}
+
+.myinfo-container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.myinfo-heading {
+  margin-bottom: 28px;
+}
+
+.myinfo-heading-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #e5efff;
+  color: #2f67df;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.myinfo-heading h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.myinfo-heading p {
+  margin: 10px 0 0;
+  color: #747d8c;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+/* 사용자 프로필 카드 */
+.myinfo-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 34px;
+  padding: 22px;
+  border: 2px solid #2f67df;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f7faff 0%, #eaf1ff 100%);
+}
+
+.myinfo-avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: #2f67df;
+  box-shadow: 0 3px 9px rgba(47, 103, 223, 0.2);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.myinfo-profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.myinfo-profile-text strong {
+  overflow: hidden;
+  color: #172033;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.myinfo-profile-text span {
+  overflow: hidden;
+  color: #6f7889;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 메뉴 영역 */
+.myinfo-menu-section {
+  margin-top: 30px;
+}
+
+.myinfo-menu-section h2 {
+  margin: 0 0 12px 3px;
+  color: #172033;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.myinfo-menu-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 82px;
+  gap: 14px;
+  padding: 15px 17px;
+  border: 1.5px solid #dfe3ea;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #172033;
+  text-align: left;
+  text-decoration: none;
+}
+
+.myinfo-menu-item + .myinfo-menu-item {
+  margin-top: 10px;
+}
+
+a.myinfo-menu-item:hover {
+  border-color: #2f67df;
+  background: #f8faff;
+}
+
+.myinfo-menu-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: #e7efff;
+  color: #2f67df;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.myinfo-document-icon {
+  font-size: 25px;
+}
+
+.myinfo-email-icon {
+  font-size: 21px;
+}
+
+.myinfo-logout-icon {
+  color: #e34f55;
+  background: #fff0f0;
+}
+
+.myinfo-menu-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 5px;
+}
+
+.myinfo-menu-content strong {
+  color: #172033;
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.myinfo-menu-content small {
+  overflow: hidden;
+  color: #798292;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.myinfo-arrow {
+  color: #9aa3b1;
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* 로그아웃 버튼 */
+.myinfo-logout-button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.myinfo-logout-button:hover {
+  border-color: #f1a5a8;
+  background: #fff8f8;
+}
+
+.myinfo-logout-button:hover .myinfo-menu-content strong {
+  color: #d83b42;
+}
+
+/* 비로그인 상태 카드 */
+.myinfo-login-card {
+  margin-top: 55px;
+  padding: 42px 25px;
+  border: 2px solid #dfe3ea;
+  border-radius: 21px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.myinfo-profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e7efff;
+  color: #2f67df;
+  font-size: 34px;
+}
+
+.myinfo-login-card h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+}
+
+.myinfo-login-card p {
+  margin: 12px 0 26px;
+  color: #747d8c;
+  font-size: 14px;
+  line-height: 1.65;
+  letter-spacing: -0.5px;
+}
+
+.myinfo-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  border-radius: 14px;
+  background: #2f67df;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.myinfo-login-button:hover {
+  background: #2058cf;
+}
+
+.myinfo-signup-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2f67df;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.myinfo-signup-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .myinfo-main {
+    padding: 32px 20px 110px;
+  }
+
+  .myinfo-heading h1 {
+    font-size: 29px;
+  }
+
+  .myinfo-profile-card {
+    padding: 18px;
+  }
+
+  .myinfo-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 22px;
+  }
+}

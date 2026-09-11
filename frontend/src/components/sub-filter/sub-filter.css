@@ -1,0 +1,26 @@
+.sub-filter {
+  display: flex;
+  width: 100%;
+  margin : 7px auto 0;
+  max-width: 560px;
+  align-items: center;
+  height: 40px;
+  border: 2px solid #2f66e8;
+  border-radius: 12px;
+  justify-content: space-around;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sub-filter > strong {
+  margin-right: auto;
+}
+.sub-filter > select {
+  margin-right: 3%;
+  padding: 3px 3px;
+  border-radius: 8px;
+}
+.sub-filter > span {
+  padding-left: 18px;
+  overflow: hidden;
+  outline: none;
+}
